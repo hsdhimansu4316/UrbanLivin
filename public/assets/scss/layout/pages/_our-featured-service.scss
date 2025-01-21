@@ -1,0 +1,109 @@
+@use '../../utils' as *;
+
+.our-featured-service {
+
+    &__item {
+        margin-bottom: 30px;
+        background: var(--rr-common-white);
+        box-shadow: 0px 1px 3px rgba(8, 10, 11, 0.1);
+
+        &:hover {
+            .our-featured-service {
+
+                &__media {
+
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+
+                &__text {
+                    h6 {
+                        color: var(--rr-theme-primary);
+                    }
+                }
+
+                &__icon {
+                    background-color: var(--rr-theme-primary);
+                    svg  [fill="#906E50"] {
+                        fill: var(--rr-common-white);
+                    }
+                }
+            }
+        }
+    }
+
+    &__media {
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @extend %rr-transition-3;
+        }
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        padding: 21px 20px;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    &__text {
+        span {
+
+        }
+
+        h6 {
+
+        }
+    }
+
+    &__icon {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @extend %rr-transition-3;
+        background-color: #F8F4F1;
+    }
+    .container {
+        position: relative;
+    }
+
+    &__slider {
+        position: relative;
+    
+      &__arrow {
+        @media #{$xs, $sm, $md, $lg} {
+          justify-content: center;
+          display: flex;
+          gap: 10px;
+        }
+  
+        &-prev {
+          left: -60px;
+        }
+        &-next {
+          right: -60px;
+        }
+        &-prev, &-next {
+          z-index: 9;
+          position: absolute;
+          top: calc(50% + 65px);
+          transform: translate(0, -50%);
+  
+          @media #{$xs, $sm, $md, $lg} {
+            top: inherit;
+            margin-top: 30px;
+            position: inherit;
+            @include transform(translate(0, 0));
+          }
+        }
+      }
+      }
+  
+}

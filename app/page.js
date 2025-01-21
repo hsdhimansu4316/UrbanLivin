@@ -1,95 +1,88 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
+import React, { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import TopNav from "@/components/TopNav";
+import Navbar from "@/components/Navbar";
+import Banner from "@/components/Banner";
+import NumberCounter from "@/components/NumberCounter";
+import Banner2 from "@/components/Banner2";
+import Navbar2 from "@/components/Navbar2";
+import About from "@/components/About";
+import BuildVision from "@/components/BuildVision";
+import OurPartners from "@/components/OurPartners";
+import OurClients from "@/components/OurClients";
+import FeatureProject from "@/components/FeatureProject";
+import Footer from "@/components/Footer";
+import FeatureVideo from "@/components/FeatureVideo";
+import PopupForm from "@/components/PopupForm";
+import ScrollAnimation from "@/components/ScrollAnimation";
+import OurPartner2 from "@/components/OurPartner2";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    useEffect(() => {
+        gsap.utils.toArray(".parallax-item").forEach((item) => {
+            gsap.fromTo(
+                item,
+                { opacity: 0, y: 50 }, // Initial state
+                {
+                    opacity: 1,
+                    y: 0,
+                    duration: 1.5,
+                    ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: item,
+                        start: "top 80%",
+                        end: "top 30%",
+                        toggleActions: "play none none none",
+                    },
+                }
+            );
+        });
+    }, []);
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+    return (
+        <main>
+            <Navbar2 />
+
+            <ScrollAnimation>
+                <Banner2 />
+            </ScrollAnimation>
+
+            <ScrollAnimation>
+                <About />
+            </ScrollAnimation>
+
+            <ScrollAnimation>
+                <NumberCounter />
+            </ScrollAnimation>
+
+            <ScrollAnimation>
+                <OurPartner2 />
+            </ScrollAnimation>
+
+            {/* <ScrollAnimation>
+                <BuildVision />
+            </ScrollAnimation> */}
+                    <ScrollAnimation>
+                <FeatureVideo />
+            </ScrollAnimation>
+
+           
+
+            <ScrollAnimation>
+                <FeatureProject />
+            </ScrollAnimation>
+
+            <ScrollAnimation>
+                <OurClients />
+            </ScrollAnimation>
+
+            <ScrollAnimation>
+                <Footer />
+            </ScrollAnimation>
+        </main>
+    );
 }

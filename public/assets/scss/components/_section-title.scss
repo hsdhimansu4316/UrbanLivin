@@ -1,0 +1,94 @@
+@use "../utils" as *;
+
+/*----------------------------------------*/
+/*  2.6 sectiontitle
+/*----------------------------------------*/
+// Section subtitle 1
+.section {
+
+  &__title-wrapper {
+    position: relative;
+    z-index: 55;
+  }
+
+  &__subtitle {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: var(--rr-ff-heading);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    color: var(--rr-theme-primary);
+
+    @media #{$xs} {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  &__title {
+
+  }
+}
+
+.section-2 {
+  
+  &__title-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__subtitle {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    color: var(--rr-theme-primary);
+    font-family: var(--rr-ff-heading);
+
+    @media #{$xs} {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    img {
+      margin-left: 10px;
+      margin-right: 10px;
+      padding-right: 10px;
+
+      @media #{$xs} {
+        display: none;
+      }
+    }
+  }
+}
+
+.title-animation {
+  overflow: hidden;
+}
+
+.rr-mb-13-hide-xl {
+  margin-bottom: 13px;
+  @media #{$xs, $sm, $md, $lg} {
+    margin-bottom: 0;
+  }
+}
+
+// title big text scroll animation
+.big-text__scroll {
+  position: absolute;
+  top: 0;
+  font-family: var(--rr-ff-exo);
+  font-style: normal;
+  font-weight: 700;
+  opacity: 0.04;
+  font-size: 240px;
+  line-height: 240px;
+  left: -127px;
+  white-space: nowrap;
+  color: var(--rr-heading-primary);
+}

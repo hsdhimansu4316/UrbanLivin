@@ -1,0 +1,110 @@
+@use '../../utils' as *;
+.testimonial {
+    z-index: 9;
+    position: relative;
+    
+    &__bottom-space {
+        margin-top: -150px;
+        margin-bottom: 120px;
+    }
+
+    &__item {
+        padding: 30px;
+        border: 1px solid rgb(8 10 11 / 10%);
+        background-color: var(--rr-common-white);
+
+        &-wrapper {
+            gap: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        &__author {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            position: relative;
+            @include border-radius(500px);
+
+
+            .icon {
+                position: absolute;
+                top: 0;
+                left: 40px;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include border-radius(500px);
+                background-color: var(--rr-theme-primary);
+            }
+        }
+
+        &__text {
+            h6 {
+                font-size: 18px;
+                line-height: 20px;
+                font-weight: var(--rr-fw-sbold);
+            }
+
+            span {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+
+        p {
+            padding-bottom: 30px;
+        }
+
+        &-bottom {
+            display: flex;
+            align-items: center;
+            padding-top: 20px;
+            justify-content: space-between;
+            border-top: 1px solid rgb(8 10 11 / 10%);
+        }
+
+
+        &__rating {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            gap: 4px;
+        }
+    }
+
+    &__slider {
+        z-index: 99999;
+        position: relative;
+    
+        &-dot {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding: 0;
+          z-index:1;
+          justify-content: center;
+    
+          .swiper-pagination-bullet {
+            width: 16px;
+            height:16px;
+            padding: 0;
+            margin: 0 !important;
+            @include border-radius(500px);
+            overflow: hidden;
+            background: transparent;
+            display: flex;
+            position: relative;
+            border: 2px solid #080A0B;
+            @extend %rr-transition-3;
+    
+            &-active {
+              border-color: var(--rr-theme-primary);
+              opacity: 1;
+            }
+          }
+        }
+      }
+}
