@@ -34,7 +34,7 @@ function Page() {
                                                 </span>
                                             </li>
                                             <li className="active">
-                                                <span>Kitchens & Wardrobs</span>
+                                                <span>Kitchens & Wardrobe</span>
                                             </li>
                                         </ul>
                                     </nav>
@@ -58,7 +58,7 @@ function Page() {
             </section> */}
 
 
-            <section className="choose-us mt-4 mb-4  section-space__top overflow-hidden">
+            <section className="choose-us mt-5 mb-5  section-space__top overflow-hidden">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6" data-aos="fade-up">
@@ -73,10 +73,14 @@ function Page() {
                         <div className="col-lg-6" data-aos="fade-up" data-aos-delay="200">
                             <div className="choose-us__content">
                                 <div className="section-2__title-wrapper mb-20">
-                                    <h2 className="section__title   title-animation">Sleek</h2>                                    
+                                    {/* <h2 className="section__title   title-animation">Sleek</h2>                                     */}
                                    <p className="mb-0">        <img className="wow clip-a-z" src="/assets/imgs/logo/12.png" style={{height:"100px", widows:"100px"}} alt="image not found" /></p>                              
                                 </div>
-                                <p>At Artima, our mission is to empower businesses like yours to achieve remarkable growth and lasting success. we achieve this through approach that focuses on your unique needs and goals.</p>
+                                <p>Crafting homes and dreams for over three decades. Sleek has transformed more
+than 3 lakh spaces and lifestyle for more than lakhs of Indians. With 300+ Exclusive
+Kitchen Studios offering over 2000+ finishes, 1000+ Accessories &amp; Hardware, Sleek
+offers the best design-to-execution service, all curated and committed with
+Asian Paints values. </p>
 
                                 <a href="https://www.sleekworld.com/modular-kitchens-campaign.html?cid=PS_GA_DM_A&utm_source=Google_Search_Brand&utm_medium=cpc&utm_campaign=Sleek_AlwaysOn_Google&utm_id=Sleek_BH_Brand_East_Exact_FY2425&utm_adgroup=AP_Sleek&utm_term=sleek%20wardrobe%20by%20asian%20paints&utm_term=e-c&gad_source=1&gclid=CjwKCAiAhP67BhAVEiwA2E_9g31gmFheX3GyVYbgeXRf8HZ6rYFAqZfw0WaKyW05hlSAQVcy6PwXghoC3K4QAvD_BwE" target="blank" className="rr-btn">
                                     <span className="btn-wrap">

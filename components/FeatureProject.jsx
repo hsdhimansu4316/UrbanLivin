@@ -21,11 +21,12 @@ function FeatureProject() {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 300,
     slidesToShow: 5,
     slidesToScroll: 1,
     dots:true,
     autoplay:true,
+    autoplaySpeed: 2000,
     nextArrow: <button className="recent-project__slider__arrow-next">Next</button>,
     prevArrow: <button className="recent-project__slider__arrow-prev">Prev</button>,
     responsive: [

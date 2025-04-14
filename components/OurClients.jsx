@@ -45,7 +45,7 @@ function OurClients() {
   return (
     <section className="our-partners">
       <div className="row">
-        <div className="section__title-wrapper text-center mb-55 mb-xs-40">
+        <div className="section__title-wrapper text-center mb-45 mb-xs-40">
           <h2 className="section__title title-animation">TRUSTED BY</h2>
         </div>
       </div>

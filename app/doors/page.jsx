@@ -5,13 +5,14 @@ import "aos/dist/aos.css"; // Import the CSS
 import Footer from "@/components/Footer";
 import Navbar2 from "@/components/Navbar2";
 import About from "@/components/About";
+import ReadMore from "@/components/read-more/read-more";
 
 function Page() {
     useEffect(() => {
         AOS.init({
-            duration: 1000, 
-            easing: "ease-in-out", 
-            once: true, 
+            duration: 1000,
+            easing: "ease-in-out",
+            once: true,
         });
     }, []);
     return (
@@ -20,7 +21,6 @@ function Page() {
             <div className="breadcrumb__area header__background-color breadcrumb__header-up breadcrumb-space overly overflow-hidden">
                 <div className="breadcrumb__background" data-background="./assets/imgs/breadcrumb/18.jpg" />
                 <div className="container">
-                   
                     <div className="row align-items-center justify-content-between">
                         <div className="col-12">
                             <div className="breadcrumb__content text-center">
@@ -38,7 +38,7 @@ function Page() {
                                             </li>
                                         </ul>
                                     </nav>
-                                        <img src="/assets/imgs/icon/door1.png" className="bread-icon" alt="" />
+                                    <img src="/assets/imgs/icon/door1.png" className="bread-icon" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -46,29 +46,28 @@ function Page() {
                 </div>
             </div>
 
-          
-
-
-            <section className="choose-us  section-space__top overflow-hidden">
+            {/* <section className="choose-us py-3 my-5  section-space__top overflow-hidden">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6" data-aos="fade-up">
                             <div className="choose-us__media m-0">
                                 <div className="choose-us__shape rr-upDown">
-                                    <img src="./assets/imgs/update/choose-us/choose-us-shape.jpg" alt="image not found" />
                                 </div>
                                 <img className="wow clip-a-z prd-img" src="/assets/imgs/doors/19.jpg" alt="image not found" />
-
                             </div>
                         </div>
                         <div className="col-lg-6" data-aos="fade-up" data-aos-delay="200">
                             <div className="choose-us__content">
                                 <div className="section-2__title-wrapper mb-20">
-                                    <h2 className="section__title   title-animation">WPC Chaukath & <span className="text-dark">Door</span>  </h2> 
-                                   <p className="mb-0">  <img className="wow clip-a-z" src="/assets/imgs/doors/1.png" style={{height:"100px", widows:"100px"}} alt="image not found" /></p>
-                               
+                                    <h2 className="section__title   title-animation">
+                                        WPC Chaukath & <span className="text-dark">Door</span>{" "}
+                                    </h2>
+                                    <p className="mb-0">
+                                        {" "}
+                                        <img className="wow clip-a-z" src="/assets/imgs/doors/1.png" style={{ height: "70px", widows: "100px" }} alt="image not found" />
+                                    </p>
                                 </div>
-                                <p>At Artima, our mission is to empower businesses like yours to achieve remarkable growth and lasting success. we achieve this through approach that focuses on your unique needs and goals.</p>
+                               
 
                                 <a href="https://www.alstoneindia.com/" target="blank" className="rr-btn">
                                     <span className="btn-wrap">
@@ -80,24 +79,22 @@ function Page() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
-
-
-
-
-            <section className="choose-us section-space alt-sec section-space__top overflow-hidden">
+            <section className="choose-us py-3 my-5 section-space alt-sec section-space__top overflow-hidden">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6" data-aos="fade-up" data-aos-delay="200">
                             <div className="choose-us__content">
                                 <div className="section-2__title-wrapper mb-20">
                                     <h2 className="section__title   title-animation">Metal Doors</h2>
-                                    <p className="mb-0">        <img className="wow clip-a-z" src="/assets/imgs/doors/3.png" style={{height:"100px", widows:"100px"}} alt="image not found" /></p>
-                               
+                                    <p className="mb-0">
+                                        {" "}
+                                        <img className="wow clip-a-z" src="/assets/imgs/doors/3.png" style={{ height: "70px", widows: "100px" }} alt="image not found" />
+                                    </p>
                                 </div>
-                                <p className="   ">At Artima, our mission is to empower businesses like yours to achieve remarkable growth and lasting success. we achieve this through approach that focuses on your unique needs and goals.</p>
-
+                                {/* <ReadMore text={"A journey into a home starts with its door. It is this door that creates the first impression and sets the tone for the rest of the house. While elegance is important while selecting a door, that’s not the only thing to consider. A door is what stands between the solace of your family and the worries of the outside world. Thus, choosing the perfect door is something that cannot be taken lightly. We’re here to help."} defaultWords={23} /> */}
+                                <p>A journey into a home starts with its door. It is this door that creates the first impression and sets the tone for the rest of the house. While elegance is important while selecting a door, that’s not the only thing to consider. A door is what stands between the solace of your family and the worries of the outside world. Thus, choosing the perfect door is something that cannot be taken lightly. We’re here to help.</p>
                                 <a href="https://www.tatapravesh.com/" target="blank" className="rr-btn">
                                     <span className="btn-wrap">
                                         <span className="text-one">Know More</span>
@@ -106,19 +103,18 @@ function Page() {
                                 </a>
                             </div>
                         </div>
-                        <div className="col-lg-6 right-img-padding" data-aos="fade-up">
+                        <div className="col-lg-6" data-aos="fade-up">
+                            {/* <img className="wow clip-a-z prd-img" src="/assets/imgs/doors/md1.png" alt="image not found" style={{ "height": "270px !important", "float": "right" }} /> */}
                             <div className="choose-us__media">
-                                <div className="choose-us__shape rr-upDown">
-                                     
-                                </div>
-                                <img className="wow clip-a-z prd-img" src="/assets/imgs/doors/20.jpg" alt="image not found" />
+                                <div className="choose-us__shape rr-upDown"></div>
+                                <img className="wow clip-a-z prd-img" src="/assets/imgs/doors/md1.png" alt="image not found" />
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* <section className="choose-us  section-space__top overflow-hidden">
+            {/* <section className="choose-us py-3 my-5  section-space__top overflow-hidden">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6" data-aos="fade-up">
@@ -148,26 +144,28 @@ function Page() {
                     </div>
                 </div>
             </section> */}
-         
-            <section className="choose-us  section-space__top overflow-hidden">
+
+            <section className="choose-us py-3 my-5  section-space__top overflow-hidden">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6" data-aos="fade-up">
+                            {/* <img className="wow clip-a-z prd-img" src="/assets/imgs/doors/21.jpg" alt="image not found" style={{ "height": "270px !important" }} /> */}
                             <div className="choose-us__media m-0">
-                                <div className="choose-us__shape rr-upDown">
-                                     
-                                </div>
+                                <div className="choose-us__shape rr-upDown"></div>
                                 <img className="wow clip-a-z prd-img" src="/assets/imgs/doors/21.jpg" alt="image not found" />
                             </div>
                         </div>
                         <div className="col-lg-6" data-aos="fade-up" data-aos-delay="200">
                             <div className="choose-us__content">
                                 <div className="section-2__title-wrapper mb-20">
-                                    <h2 className="section__title   title-animation">Main Doors  </h2>
-                                    <p className="mb-0">        <img className="wow clip-a-z" src="/assets/imgs/doors/4.png" style={{height:"100px", widows:"100px"}} alt="image not found" /></p>
+                                    <h2 className="section__title   title-animation">Main Doors </h2>
+                                    <p className="mb-0">
+                                        {" "}
+                                        <img className="wow clip-a-z" src="/assets/imgs/doors/4.png" style={{ height: "70px", widows: "100px" }} alt="image not found" />
+                                    </p>
                                 </div>
-                                <p>At Artima, our mission is to empower businesses like yours to achieve remarkable growth and lasting success. we achieve this through approach that focuses on your unique needs and goals.</p>
-
+                                {/* <ReadMore text={"We introduce an exquisite collection of aesthetic, reliable, and sturdy Giesta Entrance Doors for the contemporary homeowner. Available in 7 colours and 10 designs, our Giesta collection features magnificent entrance doors in high-quality wood design patterns and metallic finish. Our reliable top-shelf entrance doors come with user-friendly aluminium doors handles for ease of operation and high-security lock system to safeguard your home from blunt forces and potential break-ins."} defaultWords={23} /> */}
+                                <p>We introduce an exquisite collection of aesthetic, reliable, and sturdy Giesta Entrance Doors for the contemporary homeowner. Available in 7 colours and 10 designs, our Giesta collection features magnificent entrance doors in high-quality wood design patterns and metallic finish. Our reliable top-shelf entrance doors come with user-friendly aluminium doors handles for ease of operation and high-security lock system to safeguard your home from blunt forces and potential break-ins.</p>
                                 <a href="https://www.tostemindia.com/" target="blank" className="rr-btn">
                                     <span className="btn-wrap">
                                         <span className="text-one">Know More</span>
@@ -179,16 +177,21 @@ function Page() {
                     </div>
                 </div>
             </section>
-            <section className="choose-us section-space alt-sec section-space__top overflow-hidden">
+            <section className="choose-us py-3 my-5 section-space alt-sec section-space__top overflow-hidden">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6" data-aos="fade-up" data-aos-delay="200">
                             <div className="choose-us__content">
                                 <div className="section-2__title-wrapper mb-20">
-                                    <h2 className="section__title   title-animation">Glass Doors </h2>
-                                    <p className="mb-0">        <img className="wow clip-a-z" src="/assets/imgs/doors/7.png" style={{height:"100px", widows:"100px"}} alt="image not found" /></p>
+                                    <h2 className="section__title   title-animation">Internal Glass Partitions</h2>
+                                    <p className="mb-0">
+                                        {" "}
+                                        <img className="wow clip-a-z" src="/assets/imgs/doors/7.png" style={{ height: "70px", widows: "100px" }} alt="image not found" />
+                                    </p>
                                 </div>
-                                <p className="">At Artima, our mission is to empower businesses like yours to achieve remarkable growth and lasting success. we achieve this through approach that focuses on your unique needs and goals.</p>
+                                {/* <ReadMore text={"Modern architecture demands open, airy and adaptable environments. Ozone’s vast range of glass partition systems ensures that your spaces are not only aesthetically pleasing but also functional and adaptable. These systems can be customized for different layouts and designs, offering both transparency and privacy."} defaultWords={23} /> */}
+                                <p>Modern architecture demands open, airy and adaptable environments. Ozone’s vast range of glass partition systems ensures that your spaces are not only aesthetically pleasing but also functional and adaptable. These systems can be customized for different layouts and designs, offering both transparency and privacy.</p>
+                                {/* <p className="">At Artima, our mission is to empower businesses like yours to achieve remarkable growth and lasting success. we achieve this through approach that focuses on your unique needs and goals.</p> */}
 
                                 <a href="https://www.ozone.in/product-category/glass-partition-systems/" target="blank" className="rr-btn">
                                     <span className="btn-wrap">
@@ -198,18 +201,18 @@ function Page() {
                                 </a>
                             </div>
                         </div>
-                        <div className="col-lg-6 right-img-padding" data-aos="fade-up">
+                        <div className="col-lg-6" data-aos="fade-up">
+                            {/* <img className="wow clip-a-z prd-img" src="/assets/imgs/doors/22.jpg" alt="image not found" style={{ "height": "270px !important", "float": "right" }} /> */}
                             <div className="choose-us__media">
-                                <div className="choose-us__shape rr-upDown">      
-                                </div>
+                                <div className="choose-us__shape rr-upDown"></div>
                                 <img className="wow clip-a-z prd-img" src="/assets/imgs/doors/22.jpg" alt="image not found" />
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-{/* 
-            <section className="choose-us section-space alt-sec section-space__top overflow-hidden">
+            {/* 
+            <section className="choose-us py-3 my-5 section-space alt-sec section-space__top overflow-hidden">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6" data-aos="fade-up" data-aos-delay="200">
@@ -240,7 +243,7 @@ function Page() {
                 </div>
             </section> */}
 
-            {/* <section className="choose-us  section-space__top overflow-hidden">
+            {/* <section className="choose-us py-3 my-5  section-space__top overflow-hidden">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6" data-aos="fade-up">

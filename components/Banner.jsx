@@ -9,7 +9,7 @@ function Banner2() {
           <div
             className="banner__item-bg"
             style={{
-              backgroundImage: 'url(/assets/imgs/banner-1/banner1.png)',
+              backgroundImage: 'url(/assets/imgs/banner-1/banner.png)',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               height: '100vh',

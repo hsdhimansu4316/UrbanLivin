@@ -20,7 +20,7 @@ function Banner2() {
           <div
             className="banner__item-bg"
             style={{
-              backgroundImage: 'url(/assets/imgs/banner-1/banner1.png)',
+              backgroundImage: 'url(/assets/imgs/banner-1/banner.png)',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               backgroundAttachment: 'fixed', // This keeps the background image fixed when scrolling
@@ -28,14 +28,13 @@ function Banner2() {
             }}
           />
           <div className="container">
-            <div className="" />
-            <div className="" />
+        
             <div className="row">
               <div className="col-12">
                 <div className="banner__item-content" data-aos="fade-up" data-aos-delay="200">
                   <div className="banner__item-wrapper">
                     <h1 className="banner__item-title rr-fw-bold color-white">
-                    Living with <br /> Urban Livin. 
+                    <span className="banner-subtitle"> Living with </span>  <br /> <span className="banner-sb2">Urban Livin.</span> 
                     </h1>
                   
                   </div>

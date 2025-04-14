@@ -26,7 +26,7 @@ function OurPartner2() {
         </div>
 
         {/* Second Row: 2-2 Grid (5 Images) */}
-        <div className="row mb-4">
+        <div className="row mb-4 second-row">
           <div className="col-6 col-md-2 mb-3">
             <img src="/assets/imgs/logo/1.png" alt="Partner 5" className="img-fluid rounded" />
           </div>
@@ -45,7 +45,7 @@ function OurPartner2() {
         </div>
 
         {/* Third Row: 2-2 Grid (5 Images) */}
-        <div className="row">
+        <div className="row second-row">
           <div className="col-6 col-md-2 mb-3">
             <img src="/assets/imgs/logo/10.png" alt="Partner 10" className="img-fluid rounded" />
           </div>

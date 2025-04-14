@@ -60,7 +60,7 @@ function Footer() {
                                                        
                                                     </span>
                                                     <span className="text">
-                                                        <a target="_blank" href="https://maps.app.goo.gl/1N77c8d8zieLRaot7">
+                                                        <a >
                                                             Urban Livin, Plot No - 208, opposite of Post Office, Saheed Nagar, Bhubaneswar, Odisha 751007
                                                         </a>
                                                     </span>
@@ -70,7 +70,7 @@ function Footer() {
                                                         <img src="assets/imgs/icon/call.svg" alt="" />
                                                     </span>
                                                     <span className="text">
-                                                        <a href="tel:888123869523">+888 (123) 869523</a>
+                                                        <a href="tel:9831177153">+91 9831177153</a>
                                                     </span>
                                                 </li>
                                                 <li>
@@ -78,7 +78,7 @@ function Footer() {
                                                         <img src="assets/imgs/icon/mail.svg" alt="" />
                                                     </span>
                                                     <span className="text">
-                                                        <a href="mailto:example@gmail.com">example@gmail.com</a>
+                                                        <a href="mailto:example@gmail.com">livinwithurban@gmail.com</a>
                                                     </span>
                                                 </li>
                                                 <li>
@@ -148,14 +148,14 @@ function Footer() {
                     <div className="footer__bottom">
                         <div className="container">
                             <div className="row">
-                                <div className="col-lg-6">
-                                    <div className="footer__copyright text-lg-start text-center">
+                                <div className="col-lg-12">
+                                    <div className="footer__copyright text-lg-center text-center">
                                         <p className="mb-0">
                                             Copyright © 2025 Urban Livin | All Rights Reserved. Developed By<a href="https://thetechnovate.com/"> Technovate</a>
                                         </p>
                                     </div>
                                 </div>
-                                <div className="col-lg-6">
+                                {/* <div className="col-lg-6">
                                     <div className="footer__copyright-menu  last_no_bullet">
                                         <ul>
                                             <li>
@@ -169,7 +169,7 @@ function Footer() {
                                             </li>
                                         </ul>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

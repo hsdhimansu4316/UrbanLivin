@@ -13,7 +13,7 @@ function Navbar() {
                 <img src="/assets/imgs/logo/logo1.png" style={{height:'6vh'}} alt="logo not found" />
 
                 </div>
-              </a>
+              </a> 
             </div>
             <div className="mean__menu-wrapper d-none d-lg-block">
               <div className="main-menu main-menu-3">

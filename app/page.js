@@ -66,11 +66,9 @@ export default function Home() {
             {/* <ScrollAnimation>
                 <BuildVision />
             </ScrollAnimation> */}
-                    <ScrollAnimation>
+            <ScrollAnimation>
                 <FeatureVideo />
             </ScrollAnimation>
-
-           
 
             <ScrollAnimation>
                 <FeatureProject />

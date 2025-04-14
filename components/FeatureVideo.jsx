@@ -50,18 +50,27 @@ function FeatureVideo() {
           <div className="col-lg-4">
             <Slider {...settings}>
               <div>
-                <img src="/assets/imgs/projects/latest-project-1.jpg" alt="Feature 1" className="" />
+                <img src="/assets/imgs/kitchen/kitchen.jpg" style={{height:'395px'}} alt="Feature 1" className="" />
               </div>
               <div>
-                <img src="/assets/imgs/projects/latest-project-1.jpg" alt="Feature 2" className="" />
+                <img src="/assets/imgs/roofing/onduline.jpg" style={{height:'395px'}} alt="Feature 2" className="" />
               </div>
               <div>
-                <img src="/assets/imgs/projects/latest-project-1.jpg" alt="Feature 3" className="" />
+                <img src="/assets/imgs/doors/md1.png" style={{height:'395px'}} alt="Feature 3" className="" />
+              </div>
+              <div>
+                <img src="/assets/imgs/windows/1.jpg" style={{height:'395px'}} alt="Feature 3" className="" />
+              </div>
+              <div>
+                <img src="/assets/imgs/facade/1.png" style={{height:'395px'}} alt="Feature 3" className="" />
+              </div>
+              <div>
+                <img src="/assets/imgs/railing/railing3.jpg" style={{height:'395px'}} alt="Feature 3" className="" />
               </div>
             </Slider>
           </div>
-          <div className="col-lg-6 text-white">
-            <h2 className="feature-video__title">PRODUCT SHOWCASE: </h2>
+          <div className="col-lg-8 feature-left8 text-white">
+            <h2 className="feature-video__title">PRODUCT SHOWCASE </h2>
             <p className="feature-video__description">
             With world class façade and roofing designs, one of the world’s best system aluminum windows, India’s only CE certified modular railings and an extensive collection of modular kitchens and interior options, we bring you everything you need to transform your house into a home. 
             </p>

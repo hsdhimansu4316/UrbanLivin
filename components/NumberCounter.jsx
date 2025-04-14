@@ -15,7 +15,7 @@ function NumberCounter() {
 
   useEffect(() => {
     const targetValues = {
-      experience: 20,
+      experience: 20.99,
       projects: 100,
       team: 3000,
       clients: 100,
@@ -64,7 +64,7 @@ function NumberCounter() {
             <div className="experience__item-content">
               <div className="experience__item-content-icon">
                 <img
-                  src="./assets/imgs/experience/experience-1.png"
+                  src="./assets/imgs/experience/1.png"
                   alt="Years Of Experience"
                 />
               </div>
@@ -80,7 +80,7 @@ function NumberCounter() {
             <div className="experience__item-content">
               <div className="experience__item-content-icon">
                 <img
-                  src="./assets/imgs/experience/experience-2.png"
+                  src="./assets/imgs/experience/2.png"
                   alt="Sq ft. delivered"
                 />
               </div>
@@ -96,7 +96,7 @@ function NumberCounter() {
             <div className="experience__item-content">
               <div className="experience__item-content-icon">
                 <img
-                  src="./assets/imgs/experience/experience-3.png"
+                  src="./assets/imgs/experience/3.png"
                   alt="Clients"
                 />
               </div>
@@ -112,7 +112,7 @@ function NumberCounter() {
             <div className="experience__item-content">
               <div className="experience__item-content-icon">
                 <img
-                  src="./assets/imgs/experience/experience-4.png"
+                  src="./assets/imgs/experience/4.png"
                   alt="Team"
                 />
               </div>
