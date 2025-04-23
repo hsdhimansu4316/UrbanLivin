@@ -42,7 +42,6 @@ function PopupForm() {
   };
 
   if (!isVisible) return null; // Render nothing if popup is not visible
-
   return (
     <div className="popup-form-overlay">
       <div className="popup-form-container">
@@ -51,7 +50,7 @@ function PopupForm() {
         </button>
         <h2 className="popup-title">Request a call back</h2>
         <form className="popup-form" id="form" method="post" onSubmit={handleSubmit}>
-          <div className="form-group">
+          <div className="form-group">                                                                                                                                   
             <input type="text" id="name" name="name" placeholder="Enter your name" required />
           </div>
           <div className="form-group">

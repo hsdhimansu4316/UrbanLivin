@@ -466,8 +466,9 @@ html {
   font-size: 10px;
 }
 html, body {
-  overflow-x: hidden; /* Prevent horizontal overflow */
-  overflow-y: auto !important; /* Ensure vertical scrolling works */
+  /* overflow-x: hidden;  */
+  /* overflow-y: auto !important;  */
+  /* overflow-x: hidden ; */
 }
 img, iframe, video {
   max-width: 100%;
@@ -485,7 +486,7 @@ body {
   font-weight: normal;
   color: var(--rr-text-body);
   background: var(--rr-body-primary);
-  -webkit-font-smoothing: antialiased;
+  /* -webkit-font-smoothing: antialiased; */
   -moz-osx-font-smoothing: grayscale;
 }
 

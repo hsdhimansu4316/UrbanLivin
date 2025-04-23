@@ -49,7 +49,7 @@ function OurClients() {
           <h2 className="section__title title-animation">TRUSTED BY</h2>
         </div>
       </div>
-      <div className="our-partners__grid">
+      <div className="our-partners__grid px-3">
         <Slider {...settings}>
           <img src="/assets/imgs/client/1.png" alt="Partner 1" />
           <img src="/assets/imgs/client/2.png" alt="Partner 2" />
